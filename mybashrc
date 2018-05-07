@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# my personal bashrc stuff
+
+MYBASHRC=YES
+
+######### Aliases
+
+alias emacs="emacs -nw"
+alias restartwifi="wpa_cli -i wlan0 reconfigure"
+alias ll="ls -al"
+
+# git
+alias gita="git add"
+alias gitc="git commit -a"
+alias gitd="git diff"
+alias gitp="git push"
+alias gits="git status"
+alias gitl="git log --oneline --graph --decorate"
+
+alias sshagent="eval `ssh-agent -s`"
