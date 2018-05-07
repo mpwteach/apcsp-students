@@ -1,8 +1,18 @@
 #!/bin/bash
 
-# my personal bashrc stuff
-
+##########################
+#
+# My personal bashrc stuff:
+#  Best to call from ~./bashrc as follows:
+#
+#      if [ -f ~/.mybashrc ] ; then
+#          . ~/.mybashrc
+#      fi
+#
+# A dummy variable to test if this script has been executed
 MYBASHRC=YES
+##########################
+
 
 ######### Aliases
 
