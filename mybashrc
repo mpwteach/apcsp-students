@@ -1,20 +1,22 @@
 #!/bin/bash
-
-##########################
 #
-# My personal bashrc stuff:
-#  Best to call from ~./bashrc as follows:
+############################
+# My personal bashrc stuff
 #
-#      if [ -f ~/.mybashrc ] ; then
-#          . ~/.mybashrc
-#      fi
+# Call this script from ~/.bashrc as follows (or replace .bashrc)
 #
-# A dummy variable to test if this script has been executed
+#    if [ -f ~/.mybashrc ]; then
+#       . ~/.mybashrc
+#    fi
+#
+#
+# Dummy var to test if this script has been executed
 MYBASHRC=YES
-##########################
+#
 
 
-######### Aliases
+######### Aliases ##########
+#
 
 alias emacs="emacs -nw"
 alias restartwifi="wpa_cli -i wlan0 reconfigure"
@@ -28,4 +30,15 @@ alias gitp="git push"
 alias gits="git status"
 alias gitl="git log --oneline --graph --decorate"
 
-alias sshagent="eval `ssh-agent -s`"
+
+######### Functions ########
+#
+
+# fix ssh-add for remote shells
+sshadd() {
+    ssh-add
+    if [ $? -ne 0 ] ; then
+	eval `ssh-agent -s`
+	ssh-add
+    fi
+}
