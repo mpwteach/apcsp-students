@@ -1,0 +1,31 @@
+Makefile Examples
+-----------------
+
+Some examples of simple Makefiles for C programs.  To use:
+
+  - copy the Makefile to the directory of your code and call it 'Makefile'
+  - edit the Makefile to add your source files
+  - type 'make'
+
+
+Makefile1
+---------
+
+A super simple Makefile which requires the source files and target to be
+added into the Makefile.  Will build only files which need building and
+will also clean out the directory with a 'make clean'
+
+
+Makefile2
+---------
+
+Similar to Makefile2 but this one automatically searches for .c and .h files in
+the directory.  Just need to edit the target
+
+
+Makefile3
+---------
+
+More advanced Makefile which will build C/C++/Assembly and take care of header
+dependencies automatically.  Will also keep the source and object files seperate.
+Probably an overkill for simple projects.
