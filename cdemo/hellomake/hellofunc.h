@@ -2,4 +2,5 @@
 //
 // demo of multiple c files
 
-int func();
+// declare the function foo
+int foo();

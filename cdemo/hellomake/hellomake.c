@@ -10,5 +10,8 @@
 
 int main()
 {
-  printf("Hello World! %d\n", func());
+  // call function foo in hellofunc
+  int res = foo();
+  
+  printf("Hello World! %d\n", res);
 }

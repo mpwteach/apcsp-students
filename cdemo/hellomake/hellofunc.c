@@ -4,12 +4,13 @@
 
 #include <stdio.h>
 
-// always include own header file
+// always include my own header file
 #include "hellofunc.h"
 
-int func()
+// the definition of foo
+int foo()
 {
-  printf("Got to func in hellofunc\n");
+  printf("Got to function foo in hellofunc\n");
   return 123;
 }
 
