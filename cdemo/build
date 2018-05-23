@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROGARR=(helloworld variables sizeofvariables ifstmnt ifstmnt_err wloop floop badindent pointers funcs array string stringlib userinput argtest structs)
+PROGARR=(helloworld variables sizeofvariables ifstmnt ifstmnt_err wloop floop badindent pointers funcs array string stringlib userinput argtest structs rand)
 
 if [ $# -ne 0 ] ; then
     for PROG in "${PROGARR[@]}" ; do
@@ -11,10 +11,12 @@ if [ $# -ne 0 ] ; then
 fi
 
 for PROG in "${PROGARR[@]}" ; do
-    gcc $PROG.c -o $PROG
-    if [ $? -ne 0 ] ; then
-	echo "build error: "$PROG
-	exit $?
+    if [ -e $PROG.c ] ; then
+	gcc $PROG.c -o $PROG
+	if [ $? -ne 0 ] ; then
+	    echo "build error: "$PROG
+	    exit $?
+	fi
     fi
 done
 echo "built all"
