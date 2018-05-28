@@ -9,7 +9,7 @@ struct Book {
 };
 
 
-void printBook(struct Book book)
+void printBookByVal(struct Book book)
 {
   // a new copy of book
   printf("my book is -\n");
@@ -19,13 +19,16 @@ void printBook(struct Book book)
   printf("  id:%d\n", book.bookid);
 }
 
-void printBook2(struct Book* book)
+void printBookByPtr(struct Book* book)
 {
   printf("my book is -\n");
   printf("  title:%s\n", book->title);
   printf("  author:%s\n", book->author);
   printf("  subject:%s\n", book->subject);
   printf("  id:%d\n", book->bookid);
+
+  // could do it this way, but -> is easier
+  printf("  id:%d\n", (*book).bookid);
 }
 
 int main()
@@ -41,8 +44,8 @@ int main()
   mybook1.bookid = 62782;
 
   // pass by value
-  printBook(mybook1);
+  printBookByVal(mybook1);
 
   // pass by ref - generally preferred as we don't make a copy
-  printBook2(&mybook1);
+  printBookByPtr(&mybook1);
 }
