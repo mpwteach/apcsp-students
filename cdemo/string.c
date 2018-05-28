@@ -10,7 +10,7 @@ int main()
   
   printf("str1 : %s\n", str1);
 
-  // DO NOT DO THIS - attempt to modify a character in a strong constant
+  // DO NOT DO THIS - attempt to modify a character in a string constant
   //   compiler will not complain though
   //*(str1 + 3) = 'c';
 
