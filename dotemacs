@@ -1,0 +1,17 @@
+;; get rid of tool bar
+(tool-bar-mode -1)
+
+;; control z is undo
+(global-set-key (kbd "C-z") 'undo)
+
+;; compile Ctl XC
+(global-set-key "\C-xc" 'compile)
+
+;; better indentation style
+(setq c-default-style "stroustrup")
+
+;; indent 2 instead of four
+(setq-default c-basic-offset 2)
+
+;; backup files on .emacs.d
+(setq backup-directory-alist '(("" . "~/.emacs.d/emacs-backup")))
