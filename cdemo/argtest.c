@@ -2,6 +2,7 @@
 
 int main(int argc, char* argv[])
 {
+  // simple demo to print out all args supplied to program on the command line
   int arg = 0;
   while (arg < argc)
   {

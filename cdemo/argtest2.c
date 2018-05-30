@@ -1,11 +1,14 @@
 #include <stdio.h>
 
+//
+// Simple program which requires two integer inputs on the command line 
+//
 int main(int argc, char* argv[])
 {
   // first check to see if two args (3 including program name) were entered 
   if (argc != 3)
   {
-    printf("expected 2 args, please enter two integers\n");
+    printf("%s : expected 2 args, please enter two integers\n", argv[0]);
     return 1;
   }
 
@@ -28,6 +31,9 @@ int main(int argc, char* argv[])
     return 1;
   }
 
+  
+  // OK - at this stage the user input is validated and we can proceed...
+  
   printf("great you entered two ints: %d and %d\n", arg1, arg2);
 }
 
