@@ -1,3 +1,4 @@
+//
 // hellomake.c
 //
 // example C program to demo multiple source files and Makefile
