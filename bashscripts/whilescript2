@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUM=10
+
 while true ; do
    echo "are you done?"
    read ANS
