@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Exploring Raspberry Pi Chapter 5 Performance Test Code"
-echo "By Derek Molloy, using code from benchmarksgame.alioth.debian.org"
+echo "Performance Test Code"
+echo " - using code from benchmarksgame.alioth.debian.org"
 echo "Please see the source files for the author details."
-echo "All source code has been edited to remove proccessor specific optimizations"
+echo "All source code has been edited to remove processor specific optimizations"
 echo "Running the Tests:"
 echo "*** Please ensure that you do not have the ondemand governor enabled ***"
 
@@ -31,3 +31,5 @@ T=$((T/1000000))
 echo "It took ${T} milliseconds to run the Python test"
 
 echo "Finished Running the Benchmarks"
+
+

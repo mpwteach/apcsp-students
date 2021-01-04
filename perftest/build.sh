@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Exploring Raspberry Pi Chapter 5 Performance Test Code"
+echo "Performance Test Code"
 echo "Building the Executables"
 
 echo "cleaning old stuff:"
@@ -13,3 +13,4 @@ echo "Building the Java Executable"
 javac nbody.java
 
 echo "Finished Building the Compiled Programs"
+
