@@ -10,7 +10,7 @@ int main()
   char str2[10] = "second";
   char str3[20];
   
-  printf("length of str1 = %d\n", strlen(str1));
+  printf("length of str1 = %lu\n", strlen(str1));
 	
   strcpy(str3, str1);
   strcat(str3, str2);
