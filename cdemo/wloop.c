@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// comment
 int main()
 {
   int a = 0;
