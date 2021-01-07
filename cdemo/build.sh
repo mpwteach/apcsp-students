@@ -13,7 +13,9 @@ fi
 for PROG in "${PROGARR[@]}" ; do
     if [ -e $PROG.c ] ; then
 	gcc $PROG.c -o $PROG
-	if [ $? -ne 0 ] ; then
+	if [ $? -eq 0 ] ; then
+	    echo "build ok: "$PROG
+	else
 	    echo "build error: "$PROG
 	    exit $?
 	fi
