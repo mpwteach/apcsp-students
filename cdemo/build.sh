@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROGARR=(helloworld variables sizeofvariables ifstmnt ifstmnt_err wloop floop badindent pointers funcs array string stringlib userinput argtest argtest2 structs rand fileio)
+PROGARR=(helloworld variables sizeofvariables ifstmnt ifstmnt_err wloop floop iteration badindent pointers funcs array string stringlib userinput argtest argtest2 structs rand fileio)
 
 if [ $# -ne 0 ] ; then
     for PROG in "${PROGARR[@]}" ; do
