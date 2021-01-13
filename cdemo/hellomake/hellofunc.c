@@ -14,7 +14,7 @@ void myFoo(int* ip);
 // the definition of foo, this function is declared in hellofunc.h
 int foo()
 {
-  printf("Got to function foo in hellofunc\n");
+  printf("got to function foo in hellofunc\n");
 
   int i = 123;
   myFoo(&i);  // call myFoo

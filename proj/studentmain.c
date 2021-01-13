@@ -5,7 +5,7 @@
 
 
 const int BUFFSIZE=256;
-char inputBuff[BUFFSIZE];
+char inputBuff[256];
 
 
 int getInputNumber()
