@@ -57,6 +57,10 @@ void saveStudents(int key)
 void loadStudents(int key)
 {
   // load the students from the data file overwriting all exisiting students in memory
+  //  - make sure you first deleteStudents before loading new ones
+  //  - when loading it is best to load data into four strings and then (optionally) decrypt the
+  //    strings
+  //  - call createStudent to correctly create the students
 }
 
 
