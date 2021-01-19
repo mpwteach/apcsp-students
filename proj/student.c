@@ -48,7 +48,9 @@ void saveStudents(int key)
   //   - the format of the file is one line per student as follows fname lname age id:
   //       tom thumb 15 1234 
   //       james dean 21 2345 
-  //       katy jones 18 4532 
+  //       katy jones 18 4532
+  // the best way to do this is to convert the student data to a string using sprintf and then
+  // (optionally) encrypt the whole string before writing it to disk (see cdemo/fileio3.c)
 }
 
 
