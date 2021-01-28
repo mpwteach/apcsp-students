@@ -28,13 +28,22 @@ int main()
   // test encrypt
   strcpy(inpStr, "hello");
   testEncrypt(1, inpStr, shifts, 1, "khoor");
+  strcpy(inpStr, "khoor");
   testEncrypt(0, inpStr, shifts, 1, "hello");
+
+  // do not encrypt spaces - they are not in CHARS array
+  strcpy(inpStr, "hello john");
+  testEncrypt(1, inpStr, shifts, 1, "khoor mrkq");
+  strcpy(inpStr, "khoor mrkq");
+  testEncrypt(0, inpStr, shifts, 1, "hello john");
   
   strcpy(inpStr, "z9Z");
   testEncrypt(1, inpStr, shifts, 1, "Cc2");
+  strcpy(inpStr, "Cc2");
   testEncrypt(0, inpStr, shifts, 1, "z9Z");
 
   strcpy(inpStr, "hello");
   testEncrypt(1, inpStr, shifts, 3, "kiqos");
+  strcpy(inpStr, "kiqos");
   testEncrypt(0, inpStr, shifts, 3, "hello");
 }
